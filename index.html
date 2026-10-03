@@ -1,143 +1,109 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giant Burger Run</title>
-  <meta name="theme-color" content="#ff7a45">
-  <meta name="description" content="Giant Burger Run: كدّس أطول برجر، اجري عبر 18 عالم، واجمع أشكال الشيف.">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffb347, #ff7a45);
-      color: #fff;
-      padding: 24px;
-      text-align: center;
-    }
-    .wrap {
-      max-width: 760px;
-      width: 100%;
-      animation: rise .7s ease;
-    }
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .burger {
-      font-size: 80px;
-      margin-bottom: 18px;
-      display: inline-block;
-      animation: bob 2.4s ease-in-out infinite;
-    }
-    @keyframes bob {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-14px); }
-    }
-    h1 {
-      font-size: clamp(2.3rem, 5vw, 4rem);
-      margin: 0 0 12px;
-      font-weight: 900;
-      letter-spacing: 0.5px;
-      text-shadow: 2px 2px 0 rgba(0,0,0,.15);
-    }
-    p {
-      margin: 0 auto 30px;
-      max-width: 620px;
-      font-size: 1.1rem;
-      line-height: 1.7;
-      opacity: 0.96;
-    }
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: center;
-      margin-top: 10px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 16px 28px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: .2s ease;
-      box-shadow: 0 10px 25px rgba(0,0,0,.18);
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .primary {
-      background: #fff;
-      color: #ff7a45;
-    }
-    .secondary {
-      background: rgba(255,255,255,.14);
-      color: #fff;
-      border: 2px solid rgba(255,255,255,.75);
-    }
-    .grid {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 14px;
-    }
-    .card {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.2);
-      border-radius: 18px;
-      padding: 18px 12px;
-      backdrop-filter: blur(4px);
-    }
-    .icon { font-size: 32px; margin-bottom: 8px; }
-    .card span {
-      display: block;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    footer {
-      margin-top: 26px;
-      opacity: 0.9;
-      font-size: 0.95rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <div class="burger">🍔</div>
-    <h1>Giant Burger Run</h1>
-    <p>
-      كدّس أطول برجر، اجري عبر 18 عالم، اجمع مكافآت الشيف، واهزم التحديات في كل مستوى.
-    </p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Giant Burger Run</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#65a9cc">
+<meta name="description" content="Giant Burger Run: stack the tallest burger, run through 18 worlds, collect chef skins.">
+<style>@font-face{font-family:'Lilita One';src:url(data:font/ttf;base64,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AAIAAAABAAgAAQAmAAQAAAAOAgABygHAAbIBrAF6AXQBMgEIAPIAqAByAEwARgABAA4AJAApAC4ALwAwADMANAA3ADkAOgA8AEkATgBcAAEARv/xAAkARP/xAEb/8QBI/+cAUv/nAFT/5wBW/+wAV//nAFn/7ABc/90ADQBE/+IARv/nAEf/8QBI/+cASv/sAFL/5wBU/+wAVv/sAFf/4gBY/+cAWf/sAFr/7ABb//EAEgAk/84ALf/YADD/7AA0/+wARP/iAEb/2ABH/9gASP/YAEr/2ABQ/90AUf/dAFL/2ABU/9gAVf/iAFb/2ABb/+IAXP/dAF3/8QAFACT/3QAt/+wAMv/sAET/7ABI/+cACgAk/9gALf/sAET/3QBG/90AR//dAEj/3QBK/90AUv/dAFT/3QBc/+cAEAAk/+cALf/dAET/5wBG/90ASP/dAEr/5wBQ/+wAUf/sAFL/3QBU/90AVf/xAFb/5wBY/90AWf/iAFr/4gBc/+wAAQA8/+IADAAk/8QALf/TADn/3QA8/90APf/xAET/5wBG/+wASP/sAEr/5wBS/+cAVP/nAFb/5wABADz/7AADADf/3QA5/+wAPP/dAAIAWf/xAFz/8QANACT/0wBE/90ASP/dAFD/7ABR/+wAUv/dAFT/4gBV/+cAVv/nAFj/5wBb/90AXP/dAF3/4gAGADf/5wA5/9gAOv/dADz/2ABZ//EAXP/xAAAAxwAAAAAAAAFNAAAAvAAAAR8ALQHMAEEDQQBaAhMAIgMeACMCmwAsAS0ARgGuAF8BpgBfAi0AUQJaACUBMQA1Ag0AIwDlABQCPQAAAn8AIwGWAA8CDQArAhAAFAJWAAkCDAArAj8AIwH0ABgCOgAbAjUAKAEVADoBFQANAeQANAJEAEMBwgAzAkgAQgNjACcCjwAPAlIAPQIxAB4CaAAyAe0AMgHYAC0CbQAeAoQAMgGtABEBzgAJAmwAMgGzACgDiwAyAogAMgK4AB4COgAuAsIAHgJOADICEwAdAfYABQJ0AB4ClQALA7kAFQKrABICZ//1AjMAJQGBAFACSwARAYEAHgKvACwCfAAvAV4ARwIFAA4CCAAyAagAGgI1ABoB5gAaAXcAFAIEABoB9QAtAREALQEP/4oCEwAtARAALQMUABMCJwAUAgEAGgIrABMB/wAaAYwAFAHCABkBcAAT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) format('truetype')}
+:root{--sky:#65a9cc;--cream:#fff3d6;--brown:#4a2410;--red:#e63b2e;--org:#ff9a1f;--yel:#ffd23f;--v:0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:20px/1.4 'Lilita One',system-ui,sans-serif;background:var(--cream);color:var(--brown);overflow-x:hidden}
+a{color:inherit}.tall{position:relative;height:var(--h,200vh)}.stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.st{color:var(--yel);-webkit-text-stroke:5px var(--brown);paint-order:stroke fill;text-shadow:0 6px 0 var(--brown)}
+nav{position:fixed;z-index:9;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 12px) 18px 0;color:#fff;text-shadow:0 3px 0 var(--brown);font-size:22px}
+nav div{display:flex;gap:18px}nav a{text-decoration:none}
+.btn{position:relative;overflow:hidden;display:inline-block;text-decoration:none;color:#fff;font-size:30px;letter-spacing:2px;padding:16px 38px;border-radius:26px;background:linear-gradient(180deg,#9dffa8,#3fd66b);text-shadow:0 2px 0 rgba(0,0,0,.25);box-shadow:0 8px 0 #26a34e,0 12px 26px rgba(90,255,130,.6),inset 0 3px 0 rgba(255,255,255,.55);transition:transform .12s}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 #26a34e}
+.btn::after{content:"";position:absolute;top:-30%;bottom:-30%;width:18%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.8),transparent);transform:translateX(-200%) skewX(-22deg);animation:sh 3.4s infinite}
+@keyframes sh{40%,100%{transform:translateX(650%) skewX(-22deg)}}
+#hero{--h:240vh}#hero .stick{background:linear-gradient(var(--sky),#bfe3f2 72%,var(--cream));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh}
+.cl{position:absolute;height:9vh;border-radius:99px;background:#fff;opacity:.85;transform:translateX(calc(var(--p)*var(--s)*1vw))}
+.logo{position:relative;z-index:2;text-align:center;line-height:.88;font-size:min(19vw,118px);transform:translateY(calc(var(--p)*-9vh)) scale(calc(1 - var(--p)*.22))}
+.logo i{display:block;font-style:normal}.logo i:nth-child(2){color:#ff7a1a;font-size:1.15em}.logo i:nth-child(3){color:#ff4a3a}
+.burger{width:min(66vw,400px,40vh*1.2);overflow:visible;transform:translateY(calc(var(--p)*6vh)) rotate(calc(var(--p)*-9deg));filter:drop-shadow(0 18px 0 rgba(74,36,16,.18))}
+.ly{transform:translateY(calc(var(--p)*var(--d)*70px));transition:transform .08s linear}
+.hint{position:absolute;bottom:3vh;opacity:calc(1 - var(--p)*5);animation:bn 1.2s infinite;text-shadow:0 3px 0 var(--brown);color:#fff}@keyframes bn{50%{transform:translateY(8px)}}
+.band{margin:-1.2vw 0;padding:14px 0;overflow:hidden;white-space:nowrap;font-size:clamp(34px,7vw,64px);color:var(--cream);transform:rotate(var(--r)) skewX(calc(var(--v)*-1deg));position:relative;z-index:3;border-block:5px solid var(--brown)}
+.band div{display:inline-block;animation:mq var(--t,24s) linear infinite}.band.rev div{animation-direction:reverse}@keyframes mq{to{transform:translateX(-50%)}}
+#stack{--h:320vh}#stack .stick{background:linear-gradient(#ffb347,var(--org));display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:4vw;padding:0 6vw}
+#tow{position:relative;height:72vh;display:flex;flex-direction:column-reverse;align-items:center;justify-content:flex-start;padding-bottom:6vh}
+#tow b{display:block;height:5.4vh;width:var(--w);border-radius:3vh;background:var(--c);border:4px solid var(--brown);margin-top:-.8vh;animation:pp .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes pp{from{transform:scale(.3) translateY(-30vh);opacity:0}}
+#hud{position:absolute;top:calc(env(safe-area-inset-top,0px) + 62px);left:50%;transform:translateX(-50%);text-align:center;color:#fff;text-shadow:0 4px 0 var(--brown);font-size:20px;letter-spacing:2px;z-index:2}#hud span{display:block;font-size:min(16vw,72px);line-height:.9}
+#pb{position:absolute;left:12vw;right:12vw;bottom:5vh;height:14px;border-radius:9px;background:rgba(74,36,16,.5);overflow:hidden}#pb i{display:block;height:100%;width:calc(var(--p)*100%);background:linear-gradient(90deg,var(--yel),#ff7a1a)}
+.caps{position:relative;height:50vh;color:#fff;text-shadow:0 3px 0 var(--brown)}.cap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:10px;opacity:0;transform:translateY(40px);transition:.45s cubic-bezier(.34,1.56,.64,1)}.cap.on{opacity:1;transform:none}
+.cap h2{margin:0;font-size:min(11vw,60px);font-weight:400;line-height:1}.cap p{margin:0;font-size:22px;max-width:30ch}
+#worlds{--h:380vh}#worlds .stick{background:var(--brown);display:flex;flex-direction:column;justify-content:center;gap:5vh;color:var(--cream)}
+#worlds h2{margin:0 6vw;font-size:min(12vw,70px);font-weight:400}
+#track{display:flex;gap:22px;padding:0 6vw;width:max-content;will-change:transform}
+.w{position:relative;flex:none;width:min(62vw,300px);height:min(44vh,380px);border-radius:30px;padding:18px;background:linear-gradient(160deg,var(--a),var(--b));box-shadow:0 8px 0 rgba(0,0,0,.35),inset 0 0 0 3px rgba(255,255,255,.35);color:#fff;font-size:26px;line-height:1;text-shadow:0 3px 0 rgba(0,0,0,.45);overflow:hidden;transform:translateY(calc(sin(var(--i)) * 14px))}
+.w small{display:block;font-size:15px;opacity:.85;margin-top:6px}
+.sun{position:absolute;right:26px;bottom:34px;width:84px;height:84px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffbc4,#ffd23f 45%,#f5a000);box-shadow:0 0 34px #ffd23f}
+.sun::before{content:"";position:absolute;left:25px;top:30px;width:9px;height:12px;border-radius:50%;background:var(--brown);box-shadow:26px 0 var(--brown);animation:bk 4s infinite}@keyframes bk{95%{transform:scaleY(1)}98%{transform:scaleY(.1)}}
+.sun::after{content:"";position:absolute;left:28px;top:48px;width:28px;height:14px;border-bottom:5px solid var(--brown);border-radius:0 0 28px 28px}
+.sun i{position:absolute;inset:-16px;border-radius:50%;border:7px dotted #ffd23f;animation:sp 12s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+#feat{padding:12vh 6vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+#feat h2{grid-column:1/-1;margin:0;font-size:min(13vw,76px);font-weight:400;line-height:1}
+.f{background:linear-gradient(180deg,#fff,#ffd9a0);border-radius:28px;padding:24px;box-shadow:0 8px 0 #b8743a,0 18px 30px rgba(74,36,16,.2);transform:rotate(var(--r));opacity:0;translate:0 14vh;scale:.8}
+.f.in{opacity:1;translate:0;scale:1;transition:.7s cubic-bezier(.34,1.56,.64,1)}.f:nth-child(3){transition-delay:.12s}.f:nth-child(4){transition-delay:.24s}.f:nth-child(5){transition-delay:.36s}
+.f h3{margin:0 0 6px;font-size:32px;font-weight:400}.f p{margin:0;font-size:19px}
+#go{background:var(--red);color:var(--cream);text-align:center;padding:10vh 0 0;position:relative}
+#go h2{margin:0 6vw 5vh;font-size:min(15vw,110px);font-weight:400;line-height:.95}
+#go .band{background:var(--brown);color:var(--yel);margin-top:9vh}
+footer{background:var(--brown);color:var(--cream);text-align:center;padding:26px 20px calc(env(safe-area-inset-bottom,0px) + 28px);font-size:17px}footer a{margin:0 10px}
+:focus-visible{outline:4px solid #fff;outline-offset:4px}
+@media(max-width:700px){#stack .stick{grid-template-columns:1fr;align-content:center;gap:0}#tow{height:44vh}.caps{height:30vh}.cap p{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.tall{height:auto}.stick{position:static;height:auto;min-height:100vh}#track{overflow-x:auto;width:auto}.band div,.btn::after,.sun i,.hint{animation:none}.f{opacity:1;translate:0;scale:1}.cap{position:static;opacity:1;transform:none;margin-bottom:20px}.caps{height:auto}}
+</style></head><body>
+<nav><span>Giant Burger Run</span><div><a href="giant-burger-run11.html">Play</a><a href="giant-burger-run-privacy-policy.html">Privacy</a></div></nav>
 
-    <div class="buttons">
-      <a class="btn primary" href="privacy.html">📋 سياسة الخصوصية</a>
-      <a class="btn secondary" href="#">🎮 العب الآن</a>
-    </div>
+<section id="hero" class="tall"><div class="stick">
+<i class="cl" style="top:14vh;left:-6vw;width:34vw;--s:60"></i><i class="cl" style="top:34vh;right:-8vw;width:26vw;--s:-45"></i><i class="cl" style="top:62vh;left:8vw;width:20vw;--s:30"></i>
+<div class="logo"><i class="st">GIANT</i><i class="st">BURGER</i><i class="st">RUN</i></div>
+<svg class="burger" viewBox="0 0 300 250" role="img" aria-label="A giant burger" stroke="#4a2410" stroke-width="6" stroke-linejoin="round">
+<g class="ly" style="--d:-2.4"><path d="M38 100C38 28 90 12 150 12s112 16 112 88z" fill="#e59a2c"/><g fill="#fff3d6" stroke="none"><ellipse cx="108" cy="50" rx="9" ry="5" transform="rotate(-20 108 50)"/><ellipse cx="160" cy="36" rx="9" ry="5"/><ellipse cx="205" cy="56" rx="9" ry="5" transform="rotate(25 205 56)"/><ellipse cx="142" cy="72" rx="9" ry="5" transform="rotate(10 142 72)"/></g></g>
+<g class="ly" style="--d:-1.5"><path d="M30 114q20-18 40 0t40 0 40 0 40 0 40 0 28-4v24H30z" fill="#5bc25a"/></g>
+<g class="ly" style="--d:-.75"><rect x="40" y="138" width="220" height="20" rx="10" fill="#e63b2e"/></g>
+<g class="ly" style="--d:.7"><rect x="36" y="172" width="228" height="32" rx="16" fill="#6b3418"/></g>
+<g class="ly" style="--d:0"><polygon points="34,158 266,158 238,184 208,170 180,188 150,172 120,188 92,170 62,184" fill="#ffd23f"/></g>
+<g class="ly" style="--d:1.5"><path d="M40 210h220v8c0 18-20 26-40 26H80c-20 0-40-8-40-26z" fill="#e59a2c"/></g></svg>
+<a class="btn" href="giant-burger-run11.html">PLAY</a><div class="hint">scroll</div></div></section>
 
-    <div class="grid">
-      <div class="card">
-        <div class="icon">🏆</div>
-        <span>18 عالم</span>
-      </div>
-      <div class="card">
-        <div class="icon">👨‍🍳</div>
-        <span>مظهر شيف</span>
-      </div>
-      <div class="card">
-        <div class="icon">🎯</div>
-        <span>تحدي متواصل</span>
-      </div>
-      <div class="card">
-        <div class="icon">🍟</div>
-        <span>برجر ضخم</span>
-      </div>
-    </div>
+<div class="band" style="--r:-2deg;background:var(--red)"><div id="m1"></div></div>
 
-    <footer>© 2026 Giant Burger Run</footer>
-  </div>
-</body>
-</html>
+<section id="stack" class="tall"><div class="stick">
+<div id="hud">STACK<span id="n">0</span></div><div id="tow" aria-hidden="true"></div>
+<div class="caps"><div class="cap on"><h2 class="st">Grab it. Stack it.</h2><p>Every ingredient you run through lands on your burger. Taller means more coins.</p></div>
+<div class="cap"><h2 class="st">Power up</h2><p>Magnet pulls ingredients in, Shield blocks a hit, Speed gets you there faster.</p></div>
+<div class="cap"><h2 class="st">Fall? Keep going.</h2><p>Watch an optional ad to continue from the exact spot with 70% health and a 3-second shield.</p></div></div>
+<div id="pb"><i></i></div></div></section>
+
+<div class="band rev" style="--r:2deg;background:#3a8fb7;--t:30s"><div id="m2"></div></div>
+
+<section id="worlds" class="tall"><div class="stick"><h2 class="st">18 worlds. One burger.</h2><div id="track"></div></div></section>
+
+<section id="feat"><h2 class="st">Make it yours</h2>
+<div class="f" style="--r:-2deg"><h3>Chef skins</h3><p>Dozens of outfits from Common to Secret. Unlock them with coins or optional rewarded videos.</p></div>
+<div class="f" style="--r:1.5deg"><h3>Upgrades</h3><p>Burger capacity, starting ingredients, coin bonus and bonus multiplier, 10 levels each.</p></div>
+<div class="f" style="--r:-1deg"><h3>Daily gift</h3><p>Come back every day. Keep a 7-day streak and day 7 gives a free rare skin.</p></div>
+<div class="f" style="--r:2deg"><h3>Leaderboard</h3><p>Optional for players 13 and over. Pick a nickname, never your real name.</p></div></section>
+
+<section id="go"><h2 class="st">Ready to run?</h2><a class="btn" href="giant-burger-run11.html">PLAY NOW</a><div class="band rev" style="--r:-1.5deg"><div id="m3"></div></div></section>
+<footer>&copy; 2026 Giant Burger Run <a href="giant-burger-run-privacy-policy.html">Privacy Policy</a><a href="mailto:giantburgerrun@gmail.com">Contact</a></footer>
+
+<script>
+const $=s=>document.querySelector(s),rm=matchMedia('(prefers-reduced-motion:reduce)').matches,rep=(id,t)=>{$(id).innerHTML=(t+' &bull; ').repeat(16)};
+rep('#m1','RUN &bull; STACK &bull; GROW');rep('#m2','Run &bull; اركض &bull; Corre &bull; Cours &bull; Lauf &bull; 走れ &bull; Corri &bull; 달려');rep('#m3','GIANT BURGER RUN &bull; FREE TO PLAY');
+const W=[['Rainbow Rain','#5560c6','#f2cff8'],['Sunset Candy World','#ff8fa3','#ffd08a',1],['Frozen Night','#1b2a5c','#8fb8ff'],['Neon City','#1a0b3a','#ff2bd6'],['Golden Desert','#e0a030','#ffe6a8'],['Enchanted Forest','#2f7d4f','#b7e58f'],['Volcano Ember','#4a0f0f','#ff6a1a'],['Galaxy Drift','#120a3a','#7a5cff'],['Sakura Dawn','#ff9fc0','#fff0f5'],['Coral Reef','#17a2b8','#ffd27a'],['Thunderstorm','#2b3445','#7f8da6'],['Golden Palace','#c9971c','#fff0b3'],['Deep Ocean','#031d44','#1b6ca8'],['Glacier Peaks','#6fb3e0','#d8f2ff'],['Pink Clouds','#ff9ad5','#ffffff'],['Flower Field','#8fd36b','#ff9ad5'],['Cyber Rain','#08122e','#35e0ff'],['Crystal Cave','#3b1d6e','#9ae7ff']];
+const tr=$('#track');W.forEach((w,i)=>{const d=document.createElement('div');d.className='w';d.style.cssText=`--a:${w[1]};--b:${w[2]};--i:${i*1.1}`;d.innerHTML=w[0]+'<small>World '+(i+1)+'</small>'+(w[3]?'<div class="sun"><i></i></div>':'');tr.append(d)});
+const C=['#6b3418','#ffd23f','#e63b2e','#5bc25a'],tow=$('#tow'),N=12;let shown=0;
+const caps=[...document.querySelectorAll('.cap')],tall=[...document.querySelectorAll('.tall')];let ly=scrollY,vel=0,ci=0;
+function tick(){const vh=innerHeight;
+tall.forEach(t=>{const r=t.getBoundingClientRect();t._p=Math.min(1,Math.max(0,-r.top/(r.height-vh)));t.style.setProperty('--p',rm?1:t._p.toFixed(4))});
+if(!rm){vel+=((scrollY-ly)-vel)*.15;ly=scrollY;document.documentElement.style.setProperty('--v',Math.max(-10,Math.min(10,vel*.22)).toFixed(2));
+tr.style.transform=`translateX(${-$('#worlds')._p*(tr.scrollWidth-innerWidth)}px)`}
+const p=rm?1:$('#stack')._p,n=1+Math.floor(p*(N-1));$('#n').textContent=Math.round(p*500);
+while(shown<n){const b=document.createElement('b');b.style.cssText=`--c:${C[shown%4]};--w:${shown==0?'44vh':(30+(shown%3)*3)+'vh'}`;if(shown==0)b.style.setProperty('--w','min(44vw,300px)');else b.style.setProperty('--w',`min(${38+(shown%3)*3}vw,${250+(shown%3)*20}px)`);tow.append(b);shown++}
+while(shown>n){tow.lastChild.remove();shown--}
+const k=p<.34?0:p<.67?1:2;if(k!=ci){caps[ci].classList.remove('on');caps[k].classList.add('on');ci=k}
+requestAnimationFrame(tick)}
+tick();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.25});document.querySelectorAll('.f').forEach(f=>io.observe(f));
+</script></body></html>
