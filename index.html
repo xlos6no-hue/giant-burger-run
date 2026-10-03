@@ -1,540 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy – Giant Burger Run</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background: #f6f7f9;
-      color: #202124;
-      line-height: 1.7;
-    }
-    .header {
-      background: linear-gradient(135deg, #ffb347, #ff7a45);
-      color: white;
-      padding: 56px 20px 48px;
-      text-align: center;
-    }
-    .header h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 6vw, 46px);
-      font-weight: 800;
-    }
-    .header p {
-      margin: 0;
-      opacity: .92;
-      font-size: 15px;
-    }
-    .container {
-      width: min(900px, calc(100% - 32px));
-      margin: -28px auto 50px;
-    }
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: clamp(24px, 5vw, 48px);
-      box-shadow: 0 10px 35px rgba(0,0,0,.08);
-    }
-    h2 {
-      margin-top: 34px;
-      margin-bottom: 10px;
-      font-size: 21px;
-      color: #222;
-    }
-    h2:first-child { margin-top: 0; }
-    p { margin: 8px 0 14px; }
-    ul { padding-left: 24px; }
-    li { margin: 8px 0; }
-    a {
-      color: #e96532;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    a:hover { text-decoration: underline; }
-    .updated {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 7px 12px;
-      background: rgba(255,255,255,.2);
-      border-radius: 999px;
-      font-size: 13px;
-    }
-    .contact {
-      background: #fff6ef;
-      border-radius: 14px;
-      padding: 18px 20px;
-      margin-top: 14px;
-    }
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 13px;
-      padding: 0 20px 35px;
-    }
-  </style>
-<style>
-#rp{position:fixed;top:0;left:0;height:6px;width:calc(var(--p,0)*100%);background:linear-gradient(90deg,#ffd23f,#ff7a1a);z-index:9}
-.header{position:relative;overflow:hidden}.header h1,.header p,.updated{transform:translateY(calc(var(--hp,0)*46px));opacity:calc(1 - var(--hp,0)*.6)}
-.header h1{scale:calc(1 - var(--hp,0)*.12)}.back{position:absolute;top:16px;inset-inline-start:18px;color:#fff;font-weight:700}
-.header::after{content:"\1F354";position:absolute;right:6vw;bottom:-12px;font-size:84px;transform:translateY(calc(var(--hp,0)*-30px)) rotate(calc(var(--hp,0)*40deg));animation:bob 3s ease-in-out infinite}@keyframes bob{50%{translate:0 -10px}}
-.rv{opacity:0;translate:0 28px;transition:opacity .5s,translate .7s cubic-bezier(.34,1.56,.64,1)}.rv.in{opacity:1;translate:0}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;translate:0}.header::after{animation:none}.header h1,.header p,.updated{transform:none;opacity:1}}
-</style><style>.lw{margin-top:16px}#lang{font:700 16px/1 inherit;font-family:inherit;color:#202124;background:#fff;border:3px solid #4a2410;border-radius:14px;padding:10px 38px 10px 16px;appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,#4a2410 50%),linear-gradient(135deg,#4a2410 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 14px) 50%;background-size:6px 6px;background-repeat:no-repeat;box-shadow:0 4px 0 #4a2410}
-[dir=rtl] ul{padding-left:0;padding-right:24px}[hidden]{display:none!important}
-.card[dir=rtl]{font-family:system-ui,"Segoe UI",Tahoma,Arial,sans-serif}</style><style>html,body{min-height:100%;width:100%}.container{width:100%;max-width:none;margin:0;padding:0}.card{border-radius:0;box-shadow:none;min-height:calc(100vh - 220px);padding:clamp(24px,5vw,72px) clamp(20px,6vw,96px)}.card p,.card li{max-width:none}.header{padding-inline:20px}footer{padding-top:24px}</style></head>
-<body>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Giant Burger Run</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#65a9cc">
+<meta name="description" content="Giant Burger Run: stack the tallest burger, run through 18 worlds, collect chef skins.">
+<style>@font-face{font-family:'Lilita One';src:url(data:font/ttf;base64,AAEAAAAPAIAAAwBwR0RFRgARAOQAAAEMAAAAFkdQT1PuoviQAAAG2AAAAlJHU1VCbIp0hQAAASQAAAAYT1MvMmZPF60AAAG4AAAAYGNtYXDWK7K3AAACGAAAAPRnYXNwAAAAEAAAAQQAAAAIZ2x5ZqBMls0AABCQAABYOmhlYWT4vFe7AAABgAAAADZoaGVhBuEDxgAAAVwAAAAkaG10eNxXIQAAAAksAAADkGxvY2FM+TcLAAADDAAAAcptYXhwASwAUAAAATwAAAAgbmFtZV5Cf1UAAAy8AAAD0nBvc3T7hBjeAAAE2AAAAf9wcmVwaAaMhQAAAPwAAAAHuAH/hbAEjQAAAQAB//8ADwABAAAADAAAAAAAAAACAAEAAQDjAAEAAAABAAAACgAWABYAAWxhdG4ACAAAAAAAAAABAAAA5ABNAAYAAAAAAAIAAAABAAEAAABAAAAAAAAAAAEAAAOb/yQAAAPu/4r/zwO5AAEAAAAAAAAAAAAAAAAAAADkAAEAAAABAIOv/fF2Xw889QALA+gAAAAAyy0JygAAAADLLQnK/4r/JAO5A5sAAAAIAAIAAAAAAAAAAgGnAZAABQAAArwCigAAAIwCvAKKAAAB3QAyAPoAAAIAAAAAAAAAAACAAAAvQAAASgAAAAAAAAAAUFlSUwBAACD7AgOa/yUAAAObANwAAAABAAAAAAH6AsAAAAAgAAIAAAACAAAAAwAAABQAAwABAAAAFAAEAOAAAAA0ACAABAAUAH4ArgD/ATEBQgFTAWEBeAF+AZICxwLaAtwgFCAaIB4gIiAmIDAgOiBEIKwhIiIS+wL//wAAACAAoQCwATEBQQFSAWABeAF9AZICxgLaAtwgEyAYIBwgICAmIDAgOSBEIKwhIiIS+wH////j/8H/wP+P/4D/cf9l/0//S/84/gX98/3y4LzgueC44LfgtOCr4KPgmuAz377ezwXhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbAE4AvQERAVwBogG/AeICBAJDAngCkQKuAr4C4AL/AxkDSQODA68D4QQVBDUEbASZBLIE1QT4BSwFTwWIBdsGAgY1BmMGiAavBtAHBAcnB10Hhwe4B9UICwgsCEsIcwihCM4JDAkvCVEJdAmrCdsKAgoxClYKegqfCsIK3wr4CzELVguAC7YL4wwNDD0MYwx8DKEMxQzYDQ4NPA1TDYcNrQ3YDgsOLQ5XDnMOnw7MDuoPDg9HD2UPng/MD+cQHhBpELkRAhE2EYQRnhHfEhYSUhJwEo0SzRLqEzATWROPE6oT3BQWFCYUQxRYFHQUsRT+FU8VvBX2Fi8WaharFvoXNBdxF6cX6hgkGGAYoRjbGSMZbhm+GggaRBqOGsEa9hswG3gbrBvhHCccXBySHM4dAx0+HWodqh31HkMelh72H0Mfkh/iICQgZSCnIO8hMCFUIXohpSHJIg0iYyKNIrki6iMqI1YjhiPLJAkkSCSMJMok/SUqJVwlbCWnJdMmDCZKJqMm8ScsJ3YntSf1KBYoNyhUKIIonyi8KNgo9CkNKT4pbimaKdAqHCotKlEqsyrUKvUrFytdK5YrsyvsLB0AAAACAAAAAAAA/7UAMgAAAAAAAAAAAAAAAAAAAAAAAAAAAOQAAAABAAIAAwAEAAUABgAHAQIACQAKAAsADAANAA4ADwAQABEAEgATABQAFQAWABcAGAAZABoAGwAcAB0AHgAfACAAIQAiACMAJAAlACYAJwAoACkAKgArACwALQAuAC8AMAAxADIAMwA0ADUANgA3ADgAOQA6ADsAPAA9AD4APwBAAEEAQgBDAEQARQBGAEcASABJAEoASwBMAE0ATgBPAFAAUQBSAFMAVABVAFYAVwBYAFkAWgBbAFwAXQBeAF8AYABhAKMAhACFAL0AlgDoAIYAjgCLAJ0AqQCkAQMAigCDAJMA8gDzAI0AlwCIAMMA3gDxAJ4AqgD1APQA9gCiAK0AyQDHAK4AYgBjAJAAZADLAGUAyADKAM8AzADNAM4A6QBmANMA0ADRAK8AZwDwAJEA1gDUANUAaADrAO0AiQBqAGkAawBtAGwAbgCgAG8AcQBwAHIAcwB1AHQAdgB3AOoAeAB6AHkAewB9AHwAuAChAH8AfgCAAIEA7ADuALoA1wDiAOMAsACxAOQA5QC7AOYA5wCmANgA4QDdANkAsgCzALYAtwDEALQAtQDFAIIAwgCHAKsAxgC+AL8AvAEEAIwA7wDAAMEHdW5pMDAyNQd1bmkwMEFEBEV1cm8AAAEAAAAKAB4ALAABbGF0bgAIAAQAAAAA//8AAQAAAAFrZXJuAAgAAAABAAAAAQAEAAIAAAABAAgAAQAmAAQAAAAOAgABygHAAbIBrAF6AXQBMgEIAPIAqAByAEwARgABAA4AJAApAC4ALwAwADMANAA3ADkAOgA8AEkATgBcAAEARv/xAAkARP/xAEb/8QBI/+cAUv/nAFT/5wBW/+wAV//nAFn/7ABc/90ADQBE/+IARv/nAEf/8QBI/+cASv/sAFL/5wBU/+wAVv/sAFf/4gBY/+cAWf/sAFr/7ABb//EAEgAk/84ALf/YADD/7AA0/+wARP/iAEb/2ABH/9gASP/YAEr/2ABQ/90AUf/dAFL/2ABU/9gAVf/iAFb/2ABb/+IAXP/dAF3/8QAFACT/3QAt/+wAMv/sAET/7ABI/+cACgAk/9gALf/sAET/3QBG/90AR//dAEj/3QBK/90AUv/dAFT/3QBc/+cAEAAk/+cALf/dAET/5wBG/90ASP/dAEr/5wBQ/+wAUf/sAFL/3QBU/90AVf/xAFb/5wBY/90AWf/iAFr/4gBc/+wAAQA8/+IADAAk/8QALf/TADn/3QA8/90APf/xAET/5wBG/+wASP/sAEr/5wBS/+cAVP/nAFb/5wABADz/7AADADf/3QA5/+wAPP/dAAIAWf/xAFz/8QANACT/0wBE/90ASP/dAFD/7ABR/+wAUv/dAFT/4gBV/+cAVv/nAFj/5wBb/90AXP/dAF3/4gAGADf/5wA5/9gAOv/dADz/2ABZ//EAXP/xAAAAxwAAAAAAAAFNAAAAvAAAAR8ALQHMAEEDQQBaAhMAIgMeACMCmwAsAS0ARgGuAF8BpgBfAi0AUQJaACUBMQA1Ag0AIwDlABQCPQAAAn8AIwGWAA8CDQArAhAAFAJWAAkCDAArAj8AIwH0ABgCOgAbAjUAKAEVADoBFQANAeQANAJEAEMBwgAzAkgAQgNjACcCjwAPAlIAPQIxAB4CaAAyAe0AMgHYAC0CbQAeAoQAMgGtABEBzgAJAmwAMgGzACgDiwAyAogAMgK4AB4COgAuAsIAHgJOADICEwAdAfYABQJ0AB4ClQALA7kAFQKrABICZ//1AjMAJQGBAFACSwARAYEAHgKvACwCfAAvAV4ARwIFAA4CCAAyAagAGgI1ABoB5gAaAXcAFAIEABoB9QAtAREALQEP/4oCEwAtARAALQMUABMCJwAUAgEAGgIrABMB/wAaAYwAFAHCABkBcAAT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) format('truetype')}
+:root{--sky:#65a9cc;--cream:#fff3d6;--brown:#4a2410;--red:#e63b2e;--org:#ff9a1f;--yel:#ffd23f;--v:0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:20px/1.4 'Lilita One',system-ui,sans-serif;background:var(--cream);color:var(--brown);overflow-x:hidden}
+a{color:inherit}.tall{position:relative;height:var(--h,200vh)}.stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.st{color:var(--yel);-webkit-text-stroke:5px var(--brown);paint-order:stroke fill;text-shadow:0 6px 0 var(--brown)}
+nav{position:fixed;z-index:9;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 12px) 18px 0;color:#fff;text-shadow:0 3px 0 var(--brown);font-size:22px}
+nav div{display:flex;gap:18px}nav a{text-decoration:none}
+.btn{position:relative;overflow:hidden;display:inline-block;text-decoration:none;color:#fff;font-size:30px;letter-spacing:2px;padding:16px 38px;border-radius:26px;background:linear-gradient(180deg,#9dffa8,#3fd66b);text-shadow:0 2px 0 rgba(0,0,0,.25);box-shadow:0 8px 0 #26a34e,0 12px 26px rgba(90,255,130,.6),inset 0 3px 0 rgba(255,255,255,.55);transition:transform .12s}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 #26a34e}
+.btn::after{content:"";position:absolute;top:-30%;bottom:-30%;width:18%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.8),transparent);transform:translateX(-200%) skewX(-22deg);animation:sh 3.4s infinite}
+@keyframes sh{40%,100%{transform:translateX(650%) skewX(-22deg)}}
+#hero{--h:240vh}#hero .stick{background:linear-gradient(var(--sky),#bfe3f2 72%,var(--cream));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh}
+.cl{position:absolute;height:9vh;border-radius:99px;background:#fff;opacity:.85;transform:translateX(calc(var(--p)*var(--s)*1vw))}
+.logo{position:relative;z-index:2;text-align:center;line-height:.88;font-size:min(19vw,118px);transform:translateY(calc(var(--p)*-9vh)) scale(calc(1 - var(--p)*.22))}
+.logo i{display:block;font-style:normal}.logo i:nth-child(2){color:#ff7a1a;font-size:1.15em}.logo i:nth-child(3){color:#ff4a3a}
+.burger{width:min(66vw,400px,40vh*1.2);overflow:visible;transform:translateY(calc(var(--p)*6vh)) rotate(calc(var(--p)*-9deg));filter:drop-shadow(0 18px 0 rgba(74,36,16,.18))}
+.ly{transform:translateY(calc(var(--p)*var(--d)*70px));transition:transform .08s linear}
+.hint{position:absolute;bottom:3vh;opacity:calc(1 - var(--p)*5);animation:bn 1.2s infinite;text-shadow:0 3px 0 var(--brown);color:#fff}@keyframes bn{50%{transform:translateY(8px)}}
+.band{margin:-1.2vw 0;padding:14px 0;overflow:hidden;white-space:nowrap;font-size:clamp(34px,7vw,64px);color:var(--cream);transform:rotate(var(--r)) skewX(calc(var(--v)*-1deg));position:relative;z-index:3;border-block:5px solid var(--brown)}
+.band div{display:inline-block;animation:mq var(--t,24s) linear infinite}.band.rev div{animation-direction:reverse}@keyframes mq{to{transform:translateX(-50%)}}
+#stack{--h:320vh}#stack .stick{background:linear-gradient(#ffb347,var(--org));display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:4vw;padding:0 6vw}
+#tow{position:relative;height:72vh;display:flex;flex-direction:column-reverse;align-items:center;justify-content:flex-start;padding-bottom:6vh}
+#tow b{display:block;height:5.4vh;width:var(--w);border-radius:3vh;background:var(--c);border:4px solid var(--brown);margin-top:-.8vh;animation:pp .35s cubic-bezier(.34,1.56,.64,1)}
+@keyframes pp{from{transform:scale(.3) translateY(-30vh);opacity:0}}
+#hud{position:absolute;top:calc(env(safe-area-inset-top,0px) + 62px);left:50%;transform:translateX(-50%);text-align:center;color:#fff;text-shadow:0 4px 0 var(--brown);font-size:20px;letter-spacing:2px;z-index:2}#hud span{display:block;font-size:min(16vw,72px);line-height:.9}
+#pb{position:absolute;left:12vw;right:12vw;bottom:5vh;height:14px;border-radius:9px;background:rgba(74,36,16,.5);overflow:hidden}#pb i{display:block;height:100%;width:calc(var(--p)*100%);background:linear-gradient(90deg,var(--yel),#ff7a1a)}
+.caps{position:relative;height:50vh;color:#fff;text-shadow:0 3px 0 var(--brown)}.cap{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:10px;opacity:0;transform:translateY(40px);transition:.45s cubic-bezier(.34,1.56,.64,1)}.cap.on{opacity:1;transform:none}
+.cap h2{margin:0;font-size:min(11vw,60px);font-weight:400;line-height:1}.cap p{margin:0;font-size:22px;max-width:30ch}
+#worlds{--h:380vh}#worlds .stick{background:var(--brown);display:flex;flex-direction:column;justify-content:center;gap:5vh;color:var(--cream)}
+#worlds h2{margin:0 6vw;font-size:min(12vw,70px);font-weight:400}
+#track{display:flex;gap:22px;padding:0 6vw;width:max-content;will-change:transform}
+.w{position:relative;flex:none;width:min(62vw,300px);height:min(44vh,380px);border-radius:30px;padding:18px;background:linear-gradient(160deg,var(--a),var(--b));box-shadow:0 8px 0 rgba(0,0,0,.35),inset 0 0 0 3px rgba(255,255,255,.35);color:#fff;font-size:26px;line-height:1;text-shadow:0 3px 0 rgba(0,0,0,.45);overflow:hidden;transform:translateY(calc(sin(var(--i)) * 14px))}
+.w small{display:block;font-size:15px;opacity:.85;margin-top:6px}
+.sun{position:absolute;right:26px;bottom:34px;width:84px;height:84px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffbc4,#ffd23f 45%,#f5a000);box-shadow:0 0 34px #ffd23f}
+.sun::before{content:"";position:absolute;left:25px;top:30px;width:9px;height:12px;border-radius:50%;background:var(--brown);box-shadow:26px 0 var(--brown);animation:bk 4s infinite}@keyframes bk{95%{transform:scaleY(1)}98%{transform:scaleY(.1)}}
+.sun::after{content:"";position:absolute;left:28px;top:48px;width:28px;height:14px;border-bottom:5px solid var(--brown);border-radius:0 0 28px 28px}
+.sun i{position:absolute;inset:-16px;border-radius:50%;border:7px dotted #ffd23f;animation:sp 12s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+#feat{padding:12vh 6vw;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px}
+#feat h2{grid-column:1/-1;margin:0;font-size:min(13vw,76px);font-weight:400;line-height:1}
+.f{background:linear-gradient(180deg,#fff,#ffd9a0);border-radius:28px;padding:24px;box-shadow:0 8px 0 #b8743a,0 18px 30px rgba(74,36,16,.2);transform:rotate(var(--r));opacity:0;translate:0 14vh;scale:.8}
+.f.in{opacity:1;translate:0;scale:1;transition:.7s cubic-bezier(.34,1.56,.64,1)}.f:nth-child(3){transition-delay:.12s}.f:nth-child(4){transition-delay:.24s}.f:nth-child(5){transition-delay:.36s}
+.f h3{margin:0 0 6px;font-size:32px;font-weight:400}.f p{margin:0;font-size:19px}
+#go{background:var(--red);color:var(--cream);text-align:center;padding:10vh 0 0;position:relative}
+#go h2{margin:0 6vw 5vh;font-size:min(15vw,110px);font-weight:400;line-height:.95}
+#go .band{background:var(--brown);color:var(--yel);margin-top:9vh}
+footer{background:var(--brown);color:var(--cream);text-align:center;padding:26px 20px calc(env(safe-area-inset-bottom,0px) + 28px);font-size:17px}footer a{margin:0 10px}
+:focus-visible{outline:4px solid #fff;outline-offset:4px}
+@media(max-width:700px){#stack .stick{grid-template-columns:1fr;align-content:center;gap:0}#tow{height:44vh}.caps{height:30vh}.cap p{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.tall{height:auto}.stick{position:static;height:auto;min-height:100vh}#track{overflow-x:auto;width:auto}.band div,.btn::after,.sun i,.hint{animation:none}.f{opacity:1;translate:0;scale:1}.cap{position:static;opacity:1;transform:none;margin-bottom:20px}.caps{height:auto}}
+</style></head><body>
+<nav><span>Giant Burger Run</span><div><a href="giant-burger-run11.html">Play</a><a href="giant-burger-run-privacy-policy.html">Privacy</a></div></nav>
 
-<div id="rp"></div>
-<header class="header">
-  <a class="back" href="index.html">&larr; Giant Burger Run</a>
-  <h1>Giant Burger Run</h1>
-  <p>Privacy Policy</p>
-  <div class="lw"><select id="lang" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option><option value="es">Español</option><option value="fr">Français</option><option value="pt">Português</option><option value="id">Bahasa Indonesia</option></select></div>
-  <span class="updated" id="upd">Last updated: October 3, 2026</span>
-</header>
+<section id="hero" class="tall"><div class="stick">
+<i class="cl" style="top:14vh;left:-6vw;width:34vw;--s:60"></i><i class="cl" style="top:34vh;right:-8vw;width:26vw;--s:-45"></i><i class="cl" style="top:62vh;left:8vw;width:20vw;--s:30"></i>
+<div class="logo"><i class="st">GIANT</i><i class="st">BURGER</i><i class="st">RUN</i></div>
+<svg class="burger" viewBox="0 0 300 250" role="img" aria-label="A giant burger" stroke="#4a2410" stroke-width="6" stroke-linejoin="round">
+<g class="ly" style="--d:-2.4"><path d="M38 100C38 28 90 12 150 12s112 16 112 88z" fill="#e59a2c"/><g fill="#fff3d6" stroke="none"><ellipse cx="108" cy="50" rx="9" ry="5" transform="rotate(-20 108 50)"/><ellipse cx="160" cy="36" rx="9" ry="5"/><ellipse cx="205" cy="56" rx="9" ry="5" transform="rotate(25 205 56)"/><ellipse cx="142" cy="72" rx="9" ry="5" transform="rotate(10 142 72)"/></g></g>
+<g class="ly" style="--d:-1.5"><path d="M30 114q20-18 40 0t40 0 40 0 40 0 40 0 28-4v24H30z" fill="#5bc25a"/></g>
+<g class="ly" style="--d:-.75"><rect x="40" y="138" width="220" height="20" rx="10" fill="#e63b2e"/></g>
+<g class="ly" style="--d:.7"><rect x="36" y="172" width="228" height="32" rx="16" fill="#6b3418"/></g>
+<g class="ly" style="--d:0"><polygon points="34,158 266,158 238,184 208,170 180,188 150,172 120,188 92,170 62,184" fill="#ffd23f"/></g>
+<g class="ly" style="--d:1.5"><path d="M40 210h220v8c0 18-20 26-40 26H80c-20 0-40-8-40-26z" fill="#e59a2c"/></g></svg>
+<a class="btn" href="giant-burger-run11.html">PLAY</a><div class="hint">scroll</div></div></section>
 
-<main class="container">
-  <article class="card" data-l="en">
+<div class="band" style="--r:-2deg;background:var(--red)"><div id="m1"></div></div>
 
-    <p>
-      This privacy policy applies to the mobile application
-      <strong>Giant Burger Run</strong> (“the App”). The App is a casual game
-      suitable for players of all ages.
-    </p>
+<section id="stack" class="tall"><div class="stick">
+<div id="hud">STACK<span id="n">0</span></div><div id="tow" aria-hidden="true"></div>
+<div class="caps"><div class="cap on"><h2 class="st">Grab it. Stack it.</h2><p>Every ingredient you run through lands on your burger. Taller means more coins.</p></div>
+<div class="cap"><h2 class="st">Power up</h2><p>Magnet pulls ingredients in, Shield blocks a hit, Speed gets you there faster.</p></div>
+<div class="cap"><h2 class="st">Fall? Keep going.</h2><p>Watch an optional ad to continue from the exact spot with 70% health and a 3-second shield.</p></div></div>
+<div id="pb"><i></i></div></div></section>
 
-    <h2>1. Information We Collect</h2>
-    <ul>
-      <li>
-        <strong>Game data:</strong> Game progress, including coins, levels,
-        settings, and unlocked items, is stored on your device using local
-        storage.
-      </li>
-      <li>
-        <strong>Age screen:</strong> When you first open the App, we ask for
-        your age. The age you enter is saved <strong>only on your device</strong>
-        (together with a setting that says whether you are under 13). It is
-        never sent to us or to our database. The App uses it to choose
-        advertising and feature settings: players under 13 get child-directed
-        ads with a General content rating, no personalized ads and no
-        leaderboard; players aged 13 to 15 get ads up to Parental Guidance;
-        players aged 16 and over get ads up to Teen. Mature-rated ads are never requested.
-      </li>
-      <li>
-        <strong>Leaderboard (players aged 13 and over, optional):</strong> If
-        you choose a player name and join the leaderboard, the App sends the
-        following to our online database: the player name you chose, a random
-        player ID generated by the App, your level, your total coins, and the
-        time of the update. Do not use your real name or personal information
-        as your player name. The leaderboard is not available to players who
-        say they are under 13, and no leaderboard data is sent for them. While the leaderboard is on,
-        the App also reads the leaderboard and a list of banned players from
-        our database, and checks whether your player ID has been banned or
-        corrected by us for cheating.
-      </li>
-      <li>
-        <strong>Daily gift (all players):</strong> When you open or claim the
-        daily gift, the App sends your random player ID and a gift slot
-        number to our online database so that each player can claim once per
-        day and the daily gifts are limited. No name, age, level or coins are
-        sent for this. This works for every player, including players who say
-        they are under 13.
-      </li>
-      <li>
-        <strong>Server data:</strong> Our database provider (Google Firebase) receives your IP address with each request, as any online service does. We do not use it ourselves.
-      </li>
-      <li>
-        <strong>Advertising data:</strong> Our advertising partner, Google
-        AdMob, may collect device identifiers (such as the Android Advertising
-        ID or the iOS Advertising Identifier), approximate location, IP
-        address, and information about interactions with advertisements, for
-        purposes such as displaying and measuring advertisements.
-      </li>
-    </ul>
-    <p>
-      We do not require an account, and we do not ask for your real name,
-      email address, precise location, or contacts.
-    </p>
+<div class="band rev" style="--r:2deg;background:#3a8fb7;--t:30s"><div id="m2"></div></div>
 
-    <h2>2. How We Use Information</h2>
-    <ul>
-      <li>Local game data is used to save your progress and preferences within the App.</li>
-      <li>The under-13 setting is used only to choose the advertising settings and features that apply to you.</li>
-      <li>
-        Leaderboard data is used to show rankings to other players. We may
-        remove or correct entries that contain inappropriate names or appear
-        to be the result of cheating.
-      </li>
-      <li>Daily gift data (player ID and slot number) is used only to give each player one gift per day and to limit the number of gifts.</li>
-      <li>
-        Advertising-related data may be used by Google AdMob to display and
-        measure advertisements.
-      </li>
-    </ul>
+<section id="worlds" class="tall"><div class="stick"><h2 class="st">18 worlds. One burger.</h2><div id="track"></div></div></section>
 
-    <h2>3. Advertising</h2>
-    <p>
-      The App uses <strong>Google AdMob</strong>. Ads are optional rewarded
-      videos, shown only when you choose to watch one, for example to revive
-      during a run, to unlock a skin, or to double your coins. You can always
-      decline.
-    </p>
-    <p>
-      Google’s privacy practices are described in its
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-        Privacy Policy
-      </a>.
-    </p>
-    <p>We do not sell your personal information.</p>
+<section id="feat"><h2 class="st">Make it yours</h2>
+<div class="f" style="--r:-2deg"><h3>Chef skins</h3><p>Dozens of outfits from Common to Secret. Unlock them with coins or optional rewarded videos.</p></div>
+<div class="f" style="--r:1.5deg"><h3>Upgrades</h3><p>Burger capacity, starting ingredients, coin bonus and bonus multiplier, 10 levels each.</p></div>
+<div class="f" style="--r:-1deg"><h3>Daily gift</h3><p>Come back every day. Keep a 7-day streak and day 7 gives a free rare skin.</p></div>
+<div class="f" style="--r:2deg"><h3>Leaderboard</h3><p>Optional for players 13 and over. Pick a nickname, never your real name.</p></div></section>
 
-    <h2>4. Children’s Privacy</h2>
-    <p>
-      The App does not knowingly collect personal information from children
-      for our own use.
-    </p>
-    <ul>
-      <li>
-        If you tell us you are under 13, the App treats you as a child:
-        advertising is configured as child-directed with a General content
-        rating, personalized advertising is not used, and the leaderboard is
-        turned off. The daily gift still works and uses only the random
-        player ID described above.
-      </li>
-      <li>
-        If you are 13 or older, you may join the leaderboard. Personalized
-        advertising is used only if you give consent through Google&rsquo;s
-        consent form; otherwise ads are not personalized.
-      </li>
-    </ul>
-    <p>
-      If a player chooses the under-13 setting after previously using the
-      leaderboard, the App asks our database to delete that player’s
-      leaderboard entry. If you are a parent or guardian and believe a child
-      has provided information to us, please contact us and we will help.
-    </p>
-
-    <h2>5. Consent (EEA, UK and Similar Regions)</h2>
-    <p>
-      For players aged 13 and over, where required by law, such as in the
-      European Economic Area and the United Kingdom, the App asks for your
-      consent before using your data for personalized advertising. On iOS, the
-      App may also ask for your permission to track your activity across other
-      companies’ apps and websites. You can change your choices at any time
-      through the options provided in the App or on your device.
-    </p>
-
-    <h2>6. Service Providers</h2>
-    <ul>
-      <li><strong>Google AdMob</strong> for advertising.</li>
-      <li>
-        <strong>Google Firebase Realtime Database</strong> for storing
-        leaderboard data.
-      </li>
-    </ul>
-    <p>
-      These providers process data according to their own privacy policies.
-    </p>
-
-    <h2>7. Data Retention and Deletion</h2>
-    <ul>
-      <li>
-        Game progress and your under-13 setting can be deleted by clearing the
-        App’s data or uninstalling the App.
-      </li>
-      <li>
-        Leaderboard data remains in our database until it is deleted.
-        Clearing the App’s data or uninstalling the App does not delete it,
-        because the player ID is removed from your device. To have your
-        leaderboard entry deleted, contact us (see below) and tell us your
-        player name.
-      </li>
-      <li>
-        Daily gift records (player ID and slot) cannot be removed by the App. To have yours deleted, contact us and include your player ID or player name.
-      </li>
-      <li>
-        Data collected by Google AdMob is handled according to Google’s
-        privacy and retention policies.
-      </li>
-    </ul>
-
-    <h2>8. Your Choices and Rights</h2>
-    <p>
-      Depending on your device and region, you may be able to reset or limit
-      the use of your advertising identifier through your device settings.
-      You may also have additional privacy and advertising controls provided
-      by Google or your device.
-    </p>
-    <p>
-      Depending on where you live, you may have rights over your personal
-      data, such as access, correction, or deletion. To exercise them for
-      leaderboard data, please contact us. For data held by Google, please use
-      Google’s privacy tools.
-    </p>
-
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>
-      We may update this Privacy Policy from time to time. The “Last updated”
-      date at the top of this policy will be changed when updates are made.
-    </p>
-
-    <h2>10. Contact</h2>
-    <div class="contact">
-      If you have questions about this Privacy Policy, please contact us at:
-      <br>
-      <a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a>
-    </div>
-
-  </article>
-<article class="card" data-l="ar" dir="rtl" lang="ar" hidden>
-<p>تنطبق سياسة الخصوصية هذه على تطبيق الجوال <strong>Giant Burger Run</strong> («التطبيق»). التطبيق لعبة ترفيهية مناسبة للاعبين من جميع الأعمار.</p>
-<h2>1. المعلومات التي نجمعها</h2>
-<ul>
-<li><strong>بيانات اللعبة:</strong> يُحفظ تقدّمك في اللعبة، ومنه العملات والمستويات والإعدادات والعناصر المفتوحة، على جهازك عبر التخزين المحلي.</li>
-<li><strong>شاشة العمر:</strong> نسألك عن عمرك عند أول فتح للتطبيق. يُحفظ العمر الذي تدخله <strong>على جهازك فقط</strong> (مع إعداد يوضّح هل عمرك أقل من 13 سنة)، ولا يُرسل إلينا ولا إلى قاعدة بياناتنا. يستخدمه التطبيق لاختيار إعدادات الإعلانات وال��يزات: اللاعبون دون 13 سنة يحصلون على إعلانات موجّهة للأطفال بتصنيف محتوى عام، بلا إعلانات مخصّصة وبلا لوحة المتصدرين؛ ومن هم بين 13 و15 سنة يحصلون على إعلانات حتى تصنيف «إشراف الوالدين»؛ ومن هم 16 سنة فأكثر حتى تصنيف «المراهقين». لا نطلب أبدًا إعلانات للبالغين فقط.</li>
-<li><strong>لوحة المتصدرين (للاعبين من 13 سنة فأكثر، اختيارية):</strong> إذا اخترت اسم لاعب وانضممت إلى اللوحة، يرسل التطبيق إلى قاعدة بياناتنا عبر الإنترنت: اسم اللاعب الذي اخترته، ومعرّف لاعب عشوائيًا ينشئه التطبيق، ومستواك، ومجموع عملاتك، ووقت التحديث. لا تستخدم اسمك الحقيقي أو معلوماتك الشخصية كاسم لاعب. اللوحة غير متاحة لمن يذكرون أن عمرهم أقل من 13 سنة، ولا تُرسل لهم أي بيانات. وأثناء تفعيل اللوحة يقرأ التطبيق اللوحة وقائمة اللاعبين المحظورين من قاعدة بياناتنا، ويتحقق مما إذا كان معرّفك قد حُظر أو عُدّل من طرف��ا بسبب الغش.</li>
-<li><strong>الهدية اليومية (لجميع اللاعبين):</strong> عند فتح الهدية اليومية أو استلامها، يرسل التطبيق معرّف اللاعب العشوائي ورقم خانة الهدية إلى قاعدة بياناتنا حتى يستلم كل لاعب هديته مرة واحدة يوميًا وتبقى الهدايا اليومية محدودة. لا يُرسل لذلك اسم ولا عمر ولا مستوى ولا عملات. تعمل هذه الميزة لجميع اللاعبين، بمن فيهم من يذكرون أن عمرهم أقل من 13 سنة.</li>
-<li><strong>بيانات الخادم:</strong> يستلم مزوّد قاعدة البيانات (Google Firebase) عنوان IP الخاص بك مع كل طلب، كأي خدمة على الإنترنت. نحن لا نستخدمه.</li>
-<li><strong>بيانات الإعلانات:</strong> قد يجمع شريكنا الإعلاني Google AdMob معرّفات الجهاز (مثل معرّف الإعلانات في أندرويد أو iOS) والموقع التقريبي وعنوان IP ومعلومات عن التفاعل مع الإعلانات، لأغراض مثل عرض الإعلانات وقياسها.</li>
-</ul>
-<p>لا نطلب إنشاء حساب، ولا نطلب اسمك الحقيقي أو بريدك الإلكتروني أو موقعك الدقيق أو جهات اتصالك.</p>
-<h2>2. كيف نستخدم المعلومات</h2>
-<ul>
-<li>تُستخدم بيانات اللعبة المحلية لحفظ تقدّمك وتفضيلاتك داخل التطبيق.</li>
-<li>يُستخدم إعداد «أقل من 13 سنة» فقط لاختيار إعدادات الإعلانات والميزات المناسبة لك.</li>
-<li>تُستخدم بيانات لوحة المتصدرين لعرض الترتيب للاعبين الآخرين. وقد نحذف أو نصحّح المدخلات التي تحتوي أسماء غير لائقة أو التي يبدو أنها ناتجة عن غش.</li>
-<li>تُستخدم بيانات الهدية اليومية (المعرّف ورقم الخانة) فقط لمنح كل لاعب هدية واحدة يوميًا ولتحديد عدد الهدايا.</li>
-<li>قد تستخدم Google AdMob البيانات المتعلقة بالإعلانات لعرض الإعلانات وقياسها.</li>
-</ul>
-<h2>3. الإعلانات</h2>
-<p>يستخدم التطبيق <strong>Google AdMob</strong>. الإعلانات عبارة عن فيديوهات مكافآت اختيارية، لا تظهر إلا عندما تختار مشاهدة أحدها، مثلًا للاستمرار بعد الخسارة، أو لفتح شخصية، أو لمضاعفة عملاتك. ويمكنك الرفض دائمًا.</p>
-<p>تُشرح ممارسات Google للخصوصية في <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة الخصوصية</a> الخاصة بها.</p>
-<p>نحن لا نبيع معلوماتك الشخصية.</p>
-<h2>4. خصوصية الأطفال</h2>
-<p>لا يجمع التطبيق عن علم معلومات شخصية من الأطفال لاستخدامنا الخاص.</p>
-<ul>
-<li>إذا أخبرتنا أن عمرك أقل من 13 سنة، يعاملك التطبيق كطفل: تُضبط الإعلانات على أنها موجّهة للأطفال بتصنيف محتوى عام، ولا تُستخدم الإعلانات المخصّصة، وتُغلق لوحة المتصدر��ن. وتبقى الهدية اليومية تعمل وتستخدم معرّف اللاعب العشوائي المذكور أعلاه فقط.</li>
-<li>إذا كان عمرك 13 سنة أو أكثر، يمكنك الانضمام إلى لوحة المتصدرين. ولا تُستخدم الإعلانات المخصّصة إلا إذا وافقت عبر نموذج الموافقة من Google، وإلا فالإعلانات غير مخصّصة.</li>
-</ul>
-<p>إذا اختار لاعب إعداد «أقل من 13 سنة» بعد أن استخدم لوحة المتصدرين سابقًا، يطلب التطبيق من قاعدة بياناتنا حذف مدخلته في اللوحة. وإذا كنت والدًا أو وليّ أمر وتعتقد أن طفلًا قدّم معلومات إلينا، فتواصل معنا وسنساعدك.</p>
-<h2>5. الموافقة (المنطقة الاقتصادية الأوروبية والمملكة المتحدة والمناطق المشابهة)</h2>
-<p>للاعبين من 13 سنة فأكثر، حيث يشترط القانون ذلك كما في المنطقة الاقتصادية الأوروبية والمملكة المتحدة، يطلب التطبيق موافقتك قبل استخدام بياناتك لل��علانات المخصّصة. وعلى iOS قد يطلب التطبيق أيضًا إذنك لتتبّع نشاطك عبر تطبيقات ومواقع شركات أخرى. يمكنك تغيير اختياراتك في أي وقت من الخيارات المتاحة في التطبيق أو على جهازك.</p>
-<h2>6. مزوّدو الخدمة</h2>
-<ul>
-<li><strong>Google AdMob</strong> للإعلانات.</li>
-<li><strong>Google Firebase Realtime Database</strong> لتخزين بيانات لوحة المتصدرين والهدية اليومية.</li>
-</ul>
-<p>يعالج هؤلاء المزوّدون البيانات وفق سياسات الخصوصية الخاصة بهم.</p>
-<h2>7. الاحتفاظ بالبيانات وحذفها</h2>
-<ul>
-<li>يمكن حذف تقدّمك في اللعبة وإعداد «أقل من 13 سنة» بمسح بيانات التطبيق أو إلغاء تثبيته.</li>
-<li>تبقى بيانات لوحة المتصدرين في قاعدة بياناتنا حتى تُحذف. ومسح بيانات التطبيق أو إلغاء تثبيته لا يحذفها، لأن معرّف اللاعب يُزال من جهازك. لحذف مدخلتك، تواصل معنا (انظر أدناه) ��أخبرنا باسم لاعبك.</li>
-<li>لا يستطيع التطبيق إزالة سجلات الهدية اليومية (المعرّف ورقم الخانة). لحذف سجلاتك، تواصل معنا وأرفق معرّف اللاعب أو اسمه.</li>
-<li>تُعالج البيانات التي تجمعها Google AdMob وفق سياسات Google للخصوصية والاحتفاظ.</li>
-</ul>
-<h2>8. خياراتك وحقوقك</h2>
-<p>بحسب جهازك ومنطقتك، قد تستطيع إعادة ضبط معرّف الإعلانات أو تقييد استخدامه من إعدادات جهازك. وقد تتوفر لك أيضًا ضوابط إضافية للخصوصية والإعلانات من Google أو من جهازك.</p>
-<p>بحسب مكان إقامتك، قد تكون لك حقوق على بياناتك الشخصية مثل الاطلاع والتصحيح والحذف. ولممارستها على بيانات لوحة المتصدرين، تواصل معنا. أما البيانات لدى Google فاستخدم أدوات الخصوصية من Google.</p>
-<h2>9. التغييرات على سياسة الخصوصية</h2>
-<p>قد نحدّث سياسة الخصوصية من وقت لآخر. وسيتغيّر تاريخ «آخر تحديث» في أعلى هذه الصفحة عند إجراء أي تحديث.</p>
-<h2>10. التواصل</h2>
-<div class="contact">إذا كانت لديك أسئلة عن سياسة الخصوصية هذه، تواصل معنا على:<br><a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a></div>
-</article>
-<article class="card" data-l="es" lang="es" hidden>
-<p>Esta política de privacidad se aplica a la aplicación móvil <strong>Giant Burger Run</strong> («la App»). La App es un juego casual apto para jugadores de todas las edades.</p>
-<h2>1. Información que recopilamos</h2><ul>
-<li><strong>Datos de juego:</strong> tu progreso (monedas, niveles, ajustes y objetos desbloqueados) se guarda en tu dispositivo mediante almacenamiento local.</li>
-<li><strong>Pantalla de edad:</strong> al abrir la App por primera vez te pedimos tu edad. La edad que introduces se guarda <strong>solo en tu dispositivo</strong> (junto con un ajuste que indica si tienes menos de 13 años) y nunca se envía a nosotros ni a nuestra base de datos. La App la usa para elegir los ajustes de publicidad y funciones: los menores de 13 reciben anuncios dirigidos a niños con clasificación General, sin anuncios personalizados y sin clasificación de jugadores; de 13 a 15 años, anuncios hasta «Orientación parental»; a partir de 16, hasta «Adolescentes». Nunca solicitamos anuncios para adultos.</li>
-<li><strong>Clasificación (jugadores de 13 años o más, opcional):</strong> si eliges un nombre y te unes a la clasificación, la App envía a nuestra base de datos en línea: el nombre elegido, un ID de jugador aleatorio generado por la App, tu nivel, tus monedas totales y la hora de la actualización. No uses tu nombre real ni datos personales como nombre de jugador. La clasificación no está disponible para quienes indican tener menos de 13 años y no se envía ningún dato por ellos. Mientras la clasificación está activa, la App también lee la clasificación y una lista de jugadores bloqueados, y comprueba si tu ID ha sido bloqueado o corregido por nosotros por hacer trampas.</li>
-<li><strong>Regalo diario (todos los jugadores):</strong> al abrir o reclamar el regalo diario, la App envía tu ID de jugador aleatorio y un número de ranura a nuestra base de datos, para que cada jugador reclame una vez al día y los regalos sean limitados. No se envía nombre, edad, nivel ni monedas. Funciona para todos los jugadores, incluidos los que indican tener menos de 13 años.</li>
-<li><strong>Datos del servidor:</strong> nuestro proveedor de base de datos (Google Firebase) recibe tu dirección IP con cada solicitud, como cualquier servicio en línea. Nosotros no la usamos.</li>
-<li><strong>Datos de publicidad:</strong> nuestro socio publicitario, Google AdMob, puede recopilar identificadores del dispositivo (como el ID de publicidad de Android o iOS), ubicación aproximada, dirección IP e información sobre las interacciones con los anuncios, para mostrarlos y medirlos.</li></ul>
-<p>No exigimos cuenta ni pedimos tu nombre real, correo electrónico, ubicación precisa ni contactos.</p>
-<h2>2. Cómo usamos la información</h2><ul>
-<li>Los datos de juego locales sirven para guardar tu progreso y preferencias en la App.</li>
-<li>El ajuste de menor de 13 años se usa solo para elegir los ajustes de publicidad y funciones que te corresponden.</li>
-<li>Los datos de la clasificación se usan para mostrar el ranking a otros jugadores. Podemos eliminar o corregir entradas con nombres inapropiados o que parezcan fruto de trampas.</li>
-<li>Los datos del regalo diario (ID y ranura) se usan solo para dar un regalo por jugador al día y limitar su número.</li>
-<li>Google AdMob puede usar los datos de publicidad para mostrar y medir anuncios.</li></ul>
-<h2>3. Publicidad</h2>
-<p>La App usa <strong>Google AdMob</strong>. Los anuncios son vídeos recompensados opcionales, que solo se muestran cuando eliges verlos, por ejemplo para continuar tras perder, desbloquear un aspecto o duplicar tus monedas. Siempre puedes rechazarlos.</p>
-<p>Las prácticas de privacidad de Google se describen en su <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a>.</p>
-<p>No vendemos tu información personal.</p>
-<h2>4. Privacidad de los niños</h2>
-<p>La App no recopila a sabiendas información personal de niños para uso propio.</p><ul>
-<li>Si nos indicas que tienes menos de 13 años, la App te trata como niño: la publicidad se configura como dirigida a niños con clasificación General, no se usan anuncios personalizados y la clasificación se desactiva. El regalo diario sigue funcionando y usa solo el ID aleatorio descrito arriba.</li>
-<li>Si tienes 13 años o más, puedes unirte a la clasificación. Los anuncios personalizados solo se usan si das tu consentimiento mediante el formulario de Google; de lo contrario, los anuncios no son personalizados.</li></ul>
-<p>Si un jugador elige el ajuste de menor de 13 años tras haber usado la clasificación, la App pide a nuestra base de datos que elimine su entrada. Si eres padre, madre o tutor y crees que un niño nos ha dado información, contáctanos y te ayudaremos.</p>
-<h2>5. Consentimiento (EEE, Reino Unido y regiones similares)</h2>
-<p>Para jugadores de 13 años o más, cuando la ley lo exige (por ejemplo, en el Espacio Económico Europeo y el Reino Unido), la App pide tu consentimiento antes de usar tus datos para publicidad personalizada. En iOS, la App también puede pedirte permiso para rastrear tu actividad en apps y sitios web de otras empresas. Puedes cambiar tus elecciones en cualquier momento desde las opciones de la App o de tu dispositivo.</p>
-<h2>6. Proveedores de servicios</h2><ul>
-<li><strong>Google AdMob</strong> para publicidad.</li>
-<li><strong>Google Firebase Realtime Database</strong> para almacenar los datos de la clasificación y del regalo diario.</li></ul>
-<p>Estos proveedores tratan los datos según sus propias políticas de privacidad.</p>
-<h2>7. Conservación y eliminación de datos</h2><ul>
-<li>El progreso de juego y el ajuste de menor de 13 años se eliminan borrando los datos de la App o desinstalándola.</li>
-<li>Los datos de la clasificación permanecen en nuestra base de datos hasta que se eliminen. Borrar los datos o desinstalar la App no los elimina, porque el ID de jugador se borra de tu dispositivo. Para que eliminemos tu entrada, contáctanos (ver abajo) e indícanos tu nombre de jugador.</li>
-<li>La App no puede eliminar los registros del regalo diario (ID y ranura). Para eliminar los tuyos, contáctanos e incluye tu ID o nombre de jugador.</li>
-<li>Los datos recopilados por Google AdMob se tratan según las políticas de privacidad y conservación de Google.</li></ul>
-<h2>8. Tus opciones y derechos</h2>
-<p>Según tu dispositivo y región, puedes restablecer o limitar el uso de tu identificador de publicidad en los ajustes del dispositivo. También puedes tener controles adicionales de privacidad y publicidad de Google o de tu dispositivo.</p>
-<p>Según dónde vivas, puedes tener derechos sobre tus datos personales, como acceso, rectificación o supresión. Para ejercerlos sobre los datos de la clasificación, contáctanos. Para los datos que tiene Google, usa las herramientas de privacidad de Google.</p>
-<h2>9. Cambios en esta política</h2>
-<p>Podemos actualizar esta política de privacidad. La fecha de «Última actualización» al inicio se modificará cuando haya cambios.</p>
-<h2>10. Contacto</h2>
-<div class="contact">Si tienes preguntas sobre esta política de privacidad, escríbenos a:<br><a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a></div>
-</article>
-<article class="card" data-l="fr" lang="fr" hidden>
-<p>Cette politique de confidentialité s'applique à l'application mobile <strong>Giant Burger Run</strong> (« l'Application »). L'Application est un jeu occasionnel adapté aux joueurs de tous âges.</p>
-<h2>1. Informations que nous collectons</h2><ul>
-<li><strong>Données de jeu :</strong> votre progression (pièces, niveaux, réglages, objets débloqués) est enregistrée sur votre appareil via le stockage local.</li>
-<li><strong>Écran d'âge :</strong> à la première ouverture, nous vous demandons votre âge. L'âge saisi est enregistré <strong>uniquement sur votre appareil</strong> (avec un réglage indiquant si vous avez moins de 13 ans) et n'est jamais envoyé à nous ni à notre base de données. L'Application s'en sert pour choisir les réglages de publicité et de fonctionnalités : les moins de 13 ans reçoivent des annonces destinées aux enfants, classées « Tout public », sans publicité personnalisée et sans classement ; de 13 à 15 ans, des annonces jusqu'à « Accord parental » ; à partir de 16 ans, jusqu'à « Adolescents ». Nous ne demandons jamais d'annonces pour adultes.</li>
-<li><strong>Classement (joueurs de 13 ans et plus, facultatif) :</strong> si vous choisissez un pseudo et rejoignez le classement, l'Application envoie à notre base de données en ligne : le pseudo choisi, un identifiant de joueur aléatoire généré par l'Application, votre niveau, votre total de pièces et l'heure de la mise à jour. N'utilisez pas votre vrai nom ni d'informations personnelles comme pseudo. Le classement n'est pas disponible pour les joueurs indiquant avoir moins de 13 ans, et aucune donnée n'est envoyée pour eux. Lorsque le classement est actif, l'Application lit aussi le classement et une liste de joueurs bannis, et vérifie si votre identifiant a été banni ou corrigé par nos soins pour triche.</li>
-<li><strong>Cadeau quotidien (tous les joueurs) :</strong> lorsque vous ouvrez ou récupérez le cadeau quotidien, l'Application envoie votre identifiant de joueur aléatoire et un numéro d'emplacement à notre base de données, afin que chaque joueur ne le récupère qu'une fois par jour et que les cadeaux soient limités. Aucun nom, âge, niveau ni pièce n'est envoyé. Cela fonctionne pour tous les joueurs, y compris ceux qui indiquent avoir moins de 13 ans.</li>
-<li><strong>Données du serveur :</strong> notre fournisseur de base de données (Google Firebase) reçoit votre adresse IP à chaque requête, comme tout service en ligne. Nous ne l'utilisons pas.</li>
-<li><strong>Données publicitaires :</strong> notre partenaire publicitaire, Google AdMob, peut collecter des identifiants d'appareil (comme l'identifiant publicitaire Android ou iOS), une localisation approximative, l'adresse IP et des informations sur les interactions avec les annonces, afin de les afficher et de les mesurer.</li></ul>
-<p>Nous n'exigeons aucun compte et ne demandons ni votre vrai nom, ni votre e-mail, ni votre position précise, ni vos contacts.</p>
-<h2>2. Utilisation des informations</h2><ul>
-<li>Les données de jeu locales servent à enregistrer votre progression et vos préférences dans l'Application.</li>
-<li>Le réglage « moins de 13 ans » sert uniquement à choisir les réglages de publicité et de fonctionnalités qui vous concernent.</li>
-<li>Les données du classement servent à afficher le classement aux autres joueurs. Nous pouvons supprimer ou corriger les entrées contenant des pseudos inappropriés ou résultant apparemment de triche.</li>
-<li>Les données du cadeau quotidien (identifiant et emplacement) servent uniquement à accorder un cadeau par joueur et par jour et à limiter leur nombre.</li>
-<li>Google AdMob peut utiliser les données publicitaires pour afficher et mesurer les annonces.</li></ul>
-<h2>3. Publicité</h2>
-<p>L'Application utilise <strong>Google AdMob</strong>. Les annonces sont des vidéos avec récompense facultatives, affichées uniquement si vous choisissez d'en regarder une, par exemple pour continuer après une défaite, débloquer un skin ou doubler vos pièces. Vous pouvez toujours refuser.</p>
-<p>Les pratiques de Google en matière de confidentialité sont décrites dans sa <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité</a>.</p>
-<p>Nous ne vendons pas vos informations personnelles.</p>
-<h2>4. Vie privée des enfants</h2>
-<p>L'Application ne collecte pas sciemment d'informations personnelles auprès d'enfants pour notre propre usage.</p><ul>
-<li>Si vous indiquez avoir moins de 13 ans, l'Application vous traite comme un enfant : la publicité est configurée comme destinée aux enfants (« Tout public »), la publicité personnalisée n'est pas utilisée et le classement est désactivé. Le cadeau quotidien fonctionne toujours et n'utilise que l'identifiant aléatoire décrit ci-dessus.</li>
-<li>Si vous avez 13 ans ou plus, vous pouvez rejoindre le classement. La publicité personnalisée n'est utilisée que si vous donnez votre consentement via le formulaire de Google ; sinon, les annonces ne sont pas personnalisées.</li></ul>
-<p>Si un joueur choisit le réglage « moins de 13 ans » après avoir utilisé le classement, l'Application demande à notre base de données de supprimer son entrée. Si vous êtes parent ou tuteur et pensez qu'un enfant nous a fourni des informations, contactez-nous et nous vous aiderons.</p>
-<h2>5. Consentement (EEE, Royaume-Uni et régions similaires)</h2>
-<p>Pour les joueurs de 13 ans et plus, lorsque la loi l'exige (par exemple dans l'Espace économique européen et au Royaume-Uni), l'Application demande votre consentement avant d'utiliser vos données pour la publicité personnalisée. Sur iOS, elle peut aussi demander l'autorisation de suivre votre activité dans les apps et sites d'autres entreprises. Vous pouvez modifier vos choix à tout moment via les options de l'Application ou de votre appareil.</p>
-<h2>6. Prestataires de services</h2><ul>
-<li><strong>Google AdMob</strong> pour la publicité.</li>
-<li><strong>Google Firebase Realtime Database</strong> pour stocker les données du classement et du cadeau quotidien.</li></ul>
-<p>Ces prestataires traitent les données selon leurs propres politiques de confidentialité.</p>
-<h2>7. Conservation et suppression des données</h2><ul>
-<li>La progression et le réglage « moins de 13 ans » peuvent être supprimés en effaçant les données de l'Application ou en la désinstallant.</li>
-<li>Les données du classement restent dans notre base jusqu'à leur suppression. Effacer les données ou désinstaller l'Application ne les supprime pas, car l'identifiant de joueur est retiré de votre appareil. Pour faire supprimer votre entrée, contactez-nous (voir ci-dessous) en indiquant votre pseudo.</li>
-<li>L'Application ne peut pas supprimer les enregistrements du cadeau quotidien (identifiant et emplacement). Pour faire supprimer les vôtres, contactez-nous en indiquant votre identifiant ou pseudo.</li>
-<li>Les données collectées par Google AdMob sont traitées selon les politiques de confidentialité et de conservation de Google.</li></ul>
-<h2>8. Vos choix et vos droits</h2>
-<p>Selon votre appareil et votre région, vous pouvez réinitialiser ou limiter l'utilisation de votre identifiant publicitaire dans les réglages de l'appareil. Google ou votre appareil peuvent aussi proposer des contrôles supplémentaires.</p>
-<p>Selon votre lieu de résidence, vous pouvez disposer de droits sur vos données personnelles (accès, rectification, suppression). Pour les exercer sur les données du classement, contactez-nous. Pour les données détenues par Google, utilisez les outils de confidentialité de Google.</p>
-<h2>9. Modifications de cette politique</h2>
-<p>Nous pouvons mettre à jour cette politique de temps à autre. La date de « Dernière mise à jour » en haut sera modifiée lors de toute mise à jour.</p>
-<h2>10. Contact</h2>
-<div class="contact">Pour toute question sur cette politique de confidentialité, écrivez-nous à :<br><a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a></div>
-</article>
-<article class="card" data-l="pt" lang="pt" hidden>
-<p>Esta política de privacidade aplica-se ao aplicativo móvel <strong>Giant Burger Run</strong> («o App»). O App é um jogo casual adequado para jogadores de todas as idades.</p>
-<h2>1. Informações que coletamos</h2><ul>
-<li><strong>Dados do jogo:</strong> seu progresso (moedas, níveis, configurações e itens desbloqueados) é salvo no seu dispositivo por armazenamento local.</li>
-<li><strong>Tela de idade:</strong> ao abrir o App pela primeira vez, pedimos sua idade. A idade informada é salva <strong>somente no seu dispositivo</strong> (junto com uma configuração que indica se você tem menos de 13 anos) e nunca é enviada para nós nem para nosso banco de dados. O App a usa para escolher as configurações de anúncios e recursos: menores de 13 anos recebem anúncios direcionados a crianças com classificação Geral, sem anúncios personalizados e sem ranking; de 13 a 15 anos, anúncios até «Orientação dos pais»; a partir de 16 anos, até «Adolescentes». Nunca solicitamos anúncios para adultos.</li>
-<li><strong>Ranking (jogadores com 13 anos ou mais, opcional):</strong> se você escolher um nome e entrar no ranking, o App envia ao nosso banco de dados online: o nome escolhido, um ID de jogador aleatório gerado pelo App, seu nível, o total de moedas e o horário da atualização. Não use seu nome real nem dados pessoais como nome de jogador. O ranking não está disponível para quem informa ter menos de 13 anos, e nenhum dado é enviado por eles. Com o ranking ativo, o App também lê o ranking e uma lista de jogadores banidos, e verifica se seu ID foi banido ou corrigido por nós por trapaça.</li>
-<li><strong>Presente diário (todos os jogadores):</strong> ao abrir ou resgatar o presente diário, o App envia seu ID de jogador aleatório e um número de vaga ao nosso banco de dados, para que cada jogador resgate uma vez por dia e os presentes sejam limitados. Nenhum nome, idade, nível ou moeda é enviado. Funciona para todos os jogadores, inclusive os que informam ter menos de 13 anos.</li>
-<li><strong>Dados do servidor:</strong> nosso provedor de banco de dados (Google Firebase) recebe seu endereço IP a cada solicitação, como qualquer serviço online. Nós não o utilizamos.</li>
-<li><strong>Dados de publicidade:</strong> nosso parceiro de publicidade, o Google AdMob, pode coletar identificadores do dispositivo (como o ID de publicidade do Android ou do iOS), localização aproximada, endereço IP e informações sobre interações com anúncios, para exibi-los e medi-los.</li></ul>
-<p>Não exigimos conta e não pedimos seu nome real, e-mail, localização precisa ou contatos.</p>
-<h2>2. Como usamos as informações</h2><ul>
-<li>Os dados locais do jogo servem para salvar seu progresso e preferências no App.</li>
-<li>A configuração de menor de 13 anos é usada somente para escolher as configurações de anúncios e recursos que se aplicam a você.</li>
-<li>Os dados do ranking são usados para mostrar a classificação a outros jogadores. Podemos remover ou corrigir entradas com nomes inadequados ou que pareçam resultado de trapaça.</li>
-<li>Os dados do presente diário (ID e vaga) são usados somente para dar um presente por jogador por dia e limitar a quantidade.</li>
-<li>O Google AdMob pode usar dados de publicidade para exibir e medir anúncios.</li></ul>
-<h2>3. Publicidade</h2>
-<p>O App usa o <strong>Google AdMob</strong>. Os anúncios são vídeos premiados opcionais, exibidos somente quando você escolhe assistir, por exemplo para continuar depois de perder, desbloquear um visual ou dobrar suas moedas. Você sempre pode recusar.</p>
-<p>As práticas de privacidade do Google estão descritas na <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade</a> dele.</p>
-<p>Não vendemos suas informações pessoais.</p>
-<h2>4. Privacidade infantil</h2>
-<p>O App não coleta intencionalmente informações pessoais de crianças para uso próprio.</p><ul>
-<li>Se você informar ter menos de 13 anos, o App o trata como criança: a publicidade é configurada como direcionada a crianças com classificação Geral, anúncios personalizados não são usados e o ranking é desativado. O presente diário continua funcionando e usa apenas o ID aleatório descrito acima.</li>
-<li>Se você tem 13 anos ou mais, pode entrar no ranking. Anúncios personalizados só são usados se você consentir pelo formulário do Google; caso contrário, os anúncios não são personalizados.</li></ul>
-<p>Se um jogador escolher a configuração de menor de 13 anos depois de usar o ranking, o App pede ao nosso banco de dados que exclua a entrada dele. Se você é pai, mãe ou responsável e acredita que uma criança nos forneceu informações, entre em contato e ajudaremos.</p>
-<h2>5. Consentimento (EEE, Reino Unido e regiões semelhantes)</h2>
-<p>Para jogadores com 13 anos ou mais, quando exigido por lei (como no Espaço Econômico Europeu e no Reino Unido), o App pede seu consentimento antes de usar seus dados para publicidade personalizada. No iOS, o App também pode pedir permissão para rastrear sua atividade em apps e sites de outras empresas. Você pode alterar suas escolhas a qualquer momento pelas opções do App ou do dispositivo.</p>
-<h2>6. Prestadores de serviço</h2><ul>
-<li><strong>Google AdMob</strong> para publicidade.</li>
-<li><strong>Google Firebase Realtime Database</strong> para armazenar os dados do ranking e do presente diário.</li></ul>
-<p>Esses provedores tratam os dados conforme suas próprias políticas de privacidade.</p>
-<h2>7. Retenção e exclusão de dados</h2><ul>
-<li>O progresso do jogo e a configuração de menor de 13 anos podem ser excluídos limpando os dados do App ou desinstalando-o.</li>
-<li>Os dados do ranking permanecem em nosso banco de dados até serem excluídos. Limpar os dados ou desinstalar o App não os exclui, porque o ID de jogador é removido do seu dispositivo. Para excluir sua entrada, entre em contato (veja abaixo) e informe seu nome de jogador.</li>
-<li>O App não consegue remover os registros do presente diário (ID e vaga). Para excluir os seus, entre em contato e informe seu ID ou nome de jogador.</li>
-<li>Os dados coletados pelo Google AdMob são tratados conforme as políticas de privacidade e retenção do Google.</li></ul>
-<h2>8. Suas escolhas e direitos</h2>
-<p>Dependendo do dispositivo e da região, você pode redefinir ou limitar o uso do seu identificador de publicidade nas configurações do dispositivo. Também pode haver controles adicionais de privacidade e publicidade do Google ou do dispositivo.</p>
-<p>Dependendo de onde você mora, você pode ter direitos sobre seus dados pessoais, como acesso, correção ou exclusão. Para exercê-los quanto aos dados do ranking, entre em contato. Para dados mantidos pelo Google, use as ferramentas de privacidade do Google.</p>
-<h2>9. Alterações nesta política</h2>
-<p>Podemos atualizar esta política de privacidade de tempos em tempos. A data de «Última atualização» no topo será alterada quando houver mudanças.</p>
-<h2>10. Contato</h2>
-<div class="contact">Em caso de dúvidas sobre esta política de privacidade, escreva para:<br><a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a></div>
-</article>
-<article class="card" data-l="id" lang="id" hidden>
-<p>Kebijakan privasi ini berlaku untuk aplikasi seluler <strong>Giant Burger Run</strong> («Aplikasi»). Aplikasi ini adalah game kasual yang cocok untuk pemain segala usia.</p>
-<h2>1. Informasi yang Kami Kumpulkan</h2><ul>
-<li><strong>Data game:</strong> kemajuan game Anda (koin, level, pengaturan, dan item yang dibuka) disimpan di perangkat Anda melalui penyimpanan lokal.</li>
-<li><strong>Layar usia:</strong> saat pertama kali membuka Aplikasi, kami menanyakan usia Anda. Usia yang Anda masukkan disimpan <strong>hanya di perangkat Anda</strong> (bersama pengaturan yang menandakan apakah usia Anda di bawah 13 tahun) dan tidak pernah dikirim kepada kami atau ke basis data kami. Aplikasi menggunakannya untuk memilih pengaturan iklan dan fitur: pemain di bawah 13 tahun mendapat iklan untuk anak dengan peringkat konten Umum, tanpa iklan personalisasi dan tanpa papan peringkat; usia 13–15 tahun mendapat iklan hingga «Bimbingan Orang Tua»; usia 16 tahun ke atas hingga «Remaja». Kami tidak pernah meminta iklan khusus dewasa.</li>
-<li><strong>Papan peringkat (pemain 13 tahun ke atas, opsional):</strong> jika Anda memilih nama pemain dan bergabung dengan papan peringkat, Aplikasi mengirim ke basis data online kami: nama pemain pilihan Anda, ID pemain acak yang dibuat Aplikasi, level Anda, total koin, dan waktu pembaruan. Jangan gunakan nama asli atau informasi pribadi sebagai nama pemain. Papan peringkat tidak tersedia bagi pemain yang menyatakan berusia di bawah 13 tahun, dan tidak ada data yang dikirim untuk mereka. Saat papan peringkat aktif, Aplikasi juga membaca papan peringkat dan daftar pemain yang diblokir dari basis data kami, serta memeriksa apakah ID Anda telah diblokir atau dikoreksi oleh kami karena kecurangan.</li>
-<li><strong>Hadiah harian (semua pemain):</strong> saat Anda membuka atau mengklaim hadiah harian, Aplikasi mengirim ID pemain acak dan nomor slot hadiah ke basis data online kami agar setiap pemain hanya mengklaim sekali sehari dan jumlah hadiah harian terbatas. Tidak ada nama, usia, level, atau koin yang dikirim. Fitur ini berlaku untuk semua pemain, termasuk yang menyatakan berusia di bawah 13 tahun.</li>
-<li><strong>Data server:</strong> penyedia basis data kami (Google Firebase) menerima alamat IP Anda pada setiap permintaan, seperti layanan online lainnya. Kami tidak menggunakannya.</li>
-<li><strong>Data iklan:</strong> mitra iklan kami, Google AdMob, dapat mengumpulkan pengenal perangkat (seperti ID Iklan Android atau iOS), perkiraan lokasi, alamat IP, dan informasi tentang interaksi dengan iklan, untuk menampilkan dan mengukur iklan.</li></ul>
-<p>Kami tidak mewajibkan akun dan tidak meminta nama asli, alamat email, lokasi tepat, atau kontak Anda.</p>
-<h2>2. Cara Kami Menggunakan Informasi</h2><ul>
-<li>Data game lokal digunakan untuk menyimpan kemajuan dan preferensi Anda di dalam Aplikasi.</li>
-<li>Pengaturan di bawah 13 tahun hanya digunakan untuk memilih pengaturan iklan dan fitur yang berlaku bagi Anda.</li>
-<li>Data papan peringkat digunakan untuk menampilkan peringkat kepada pemain lain. Kami dapat menghapus atau mengoreksi entri yang berisi nama tidak pantas atau yang tampak hasil kecurangan.</li>
-<li>Data hadiah harian (ID dan nomor slot) hanya digunakan untuk memberi satu hadiah per pemain per hari dan membatasi jumlah hadiah.</li>
-<li>Google AdMob dapat menggunakan data terkait iklan untuk menampilkan dan mengukur iklan.</li></ul>
-<h2>3. Iklan</h2>
-<p>Aplikasi menggunakan <strong>Google AdMob</strong>. Iklan berupa video berhadiah opsional yang hanya muncul saat Anda memilih menontonnya, misalnya untuk melanjutkan setelah kalah, membuka skin, atau menggandakan koin. Anda selalu boleh menolak.</p>
-<p>Praktik privasi Google dijelaskan dalam <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi</a>-nya.</p>
-<p>Kami tidak menjual informasi pribadi Anda.</p>
-<h2>4. Privasi Anak</h2>
-<p>Aplikasi tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak untuk keperluan kami sendiri.</p><ul>
-<li>Jika Anda menyatakan berusia di bawah 13 tahun, Aplikasi memperlakukan Anda sebagai anak: iklan diatur sebagai ditujukan untuk anak dengan peringkat konten Umum, iklan personalisasi tidak digunakan, dan papan peringkat dinonaktifkan. Hadiah harian tetap berfungsi dan hanya menggunakan ID pemain acak yang dijelaskan di atas.</li>
-<li>Jika Anda berusia 13 tahun atau lebih, Anda dapat bergabung dengan papan peringkat. Iklan personalisasi hanya digunakan jika Anda memberikan persetujuan melalui formulir persetujuan Google; jika tidak, iklan tidak dipersonalisasi.</li></ul>
-<p>Jika pemain memilih pengaturan di bawah 13 tahun setelah sebelumnya menggunakan papan peringkat, Aplikasi meminta basis data kami menghapus entri pemain tersebut. Jika Anda orang tua atau wali dan yakin seorang anak telah memberikan informasi kepada kami, silakan hubungi kami dan kami akan membantu.</p>
-<h2>5. Persetujuan (EEA, Inggris, dan Wilayah Serupa)</h2>
-<p>Untuk pemain berusia 13 tahun ke atas, bila diwajibkan hukum seperti di Wilayah Ekonomi Eropa dan Inggris, Aplikasi meminta persetujuan Anda sebelum menggunakan data Anda untuk iklan personalisasi. Di iOS, Aplikasi juga dapat meminta izin untuk melacak aktivitas Anda di aplikasi dan situs web perusahaan lain. Anda dapat mengubah pilihan kapan saja melalui opsi di Aplikasi atau perangkat Anda.</p>
-<h2>6. Penyedia Layanan</h2><ul>
-<li><strong>Google AdMob</strong> untuk iklan.</li>
-<li><strong>Google Firebase Realtime Database</strong> untuk menyimpan data papan peringkat dan hadiah harian.</li></ul>
-<p>Penyedia ini memproses data sesuai kebijakan privasi masing-masing.</p>
-<h2>7. Penyimpanan dan Penghapusan Data</h2><ul>
-<li>Kemajuan game dan pengaturan di bawah 13 tahun dapat dihapus dengan menghapus data Aplikasi atau mencopot pemasangannya.</li>
-<li>Data papan peringkat tetap berada di basis data kami sampai dihapus. Menghapus data atau mencopot Aplikasi tidak menghapusnya, karena ID pemain dihapus dari perangkat Anda. Untuk menghapus entri Anda, hubungi kami (lihat di bawah) dan sebutkan nama pemain Anda.</li>
-<li>Aplikasi tidak dapat menghapus catatan hadiah harian (ID dan slot). Untuk menghapus catatan Anda, hubungi kami dan sertakan ID atau nama pemain Anda.</li>
-<li>Data yang dikumpulkan Google AdMob ditangani sesuai kebijakan privasi dan penyimpanan Google.</li></ul>
-<h2>8. Pilihan dan Hak Anda</h2>
-<p>Tergantung perangkat dan wilayah, Anda dapat mengatur ulang atau membatasi penggunaan pengenal iklan melalui pengaturan perangkat. Anda mungkin juga memiliki kontrol privasi dan iklan tambahan dari Google atau perangkat Anda.</p>
-<p>Tergantung tempat tinggal Anda, Anda mungkin memiliki hak atas data pribadi Anda, seperti akses, koreksi, atau penghapusan. Untuk menggunakannya terkait data papan peringkat, hubungi kami. Untuk data yang dipegang Google, gunakan alat privasi Google.</p>
-<h2>9. Perubahan pada Kebijakan Ini</h2>
-<p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Tanggal «Terakhir diperbarui» di bagian atas akan diubah saat ada pembaruan.</p>
-<h2>10. Kontak</h2>
-<div class="contact">Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, hubungi kami di:<br><a href="mailto:giantburgerrun@gmail.com">giantburgerrun@gmail.com</a></div>
-</article>
-
-</main>
-
-<footer>
-  © 2026 Giant Burger Run. All rights reserved.
-</footer>
+<section id="go"><h2 class="st">Ready to run?</h2><a class="btn" href="giant-burger-run11.html">PLAY NOW</a><div class="band rev" style="--r:-1.5deg"><div id="m3"></div></div></section>
+<footer>&copy; 2026 Giant Burger Run <a href="giant-burger-run-privacy-policy.html">Privacy Policy</a><a href="mailto:giantburgerrun@gmail.com">Contact</a></footer>
 
 <script>
-(function(){var d=document.documentElement,h=document.querySelector('.header'),a=Math.max;
-function f(){var m=a(1,d.scrollHeight-innerHeight);d.style.setProperty('--p',Math.min(1,scrollY/m));d.style.setProperty('--hp',Math.min(1,scrollY/a(1,h.offsetHeight))) }
-addEventListener('scroll',f,{passive:true});f();
-var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.15});
-document.querySelectorAll('.card > *').forEach(function(n){n.classList.add('rv');io.observe(n)});})();
-</script>
-<script>(function(){var T={pt:['Política de Privacidade','Última atualização: 3 de outubro de 2026'],id:['Kebijakan Privasi','Terakhir diperbarui: 3 Oktober 2026'],en:['Privacy Policy','Last updated: October 3, 2026'],ar:['سياسة الخصوصية','آخر تحديث: 3 أكتوبر 2026'],es:['Política de privacidad','Última actualización: 3 de octubre de 2026'],fr:['Politique de confidentialité','Dernière mise à jour : 3 octobre 2026']},s=document.getElementById('lang'),h=document.querySelector('.header p');
-function set(l){document.querySelectorAll('article.card').forEach(function(a){var on=a.dataset.l==l;a.hidden=!on;if(on)a.querySelectorAll(':scope > *').forEach(function(n){n.classList.add('in')})});
-h.textContent=T[l][0];document.getElementById('upd').textContent=T[l][1];document.documentElement.lang=l;document.documentElement.dir=l=='ar'?'rtl':'ltr';s.value=l;try{localStorage.setItem('gbr_pl',l)}catch(e){} }
-s.addEventListener('change',function(){set(s.value)});var l='en';try{l=localStorage.getItem('gbr_pl')||(['ar','es','fr','pt','id'].filter(function(x){return navigator.language.slice(0,2)==x})[0]||'en')}catch(e){}set(T[l]?l:'en')})();</script>
-</body>
-</html>
+const $=s=>document.querySelector(s),rm=matchMedia('(prefers-reduced-motion:reduce)').matches,rep=(id,t)=>{$(id).innerHTML=(t+' &bull; ').repeat(16)};
+rep('#m1','RUN &bull; STACK &bull; GROW');rep('#m2','Run &bull; اركض &bull; Corre &bull; Cours &bull; Lauf &bull; 走れ &bull; Corri &bull; 달려');rep('#m3','GIANT BURGER RUN &bull; FREE TO PLAY');
+const W=[['Rainbow Rain','#5560c6','#f2cff8'],['Sunset Candy World','#ff8fa3','#ffd08a',1],['Frozen Night','#1b2a5c','#8fb8ff'],['Neon City','#1a0b3a','#ff2bd6'],['Golden Desert','#e0a030','#ffe6a8'],['Enchanted Forest','#2f7d4f','#b7e58f'],['Volcano Ember','#4a0f0f','#ff6a1a'],['Galaxy Drift','#120a3a','#7a5cff'],['Sakura Dawn','#ff9fc0','#fff0f5'],['Coral Reef','#17a2b8','#ffd27a'],['Thunderstorm','#2b3445','#7f8da6'],['Golden Palace','#c9971c','#fff0b3'],['Deep Ocean','#031d44','#1b6ca8'],['Glacier Peaks','#6fb3e0','#d8f2ff'],['Pink Clouds','#ff9ad5','#ffffff'],['Flower Field','#8fd36b','#ff9ad5'],['Cyber Rain','#08122e','#35e0ff'],['Crystal Cave','#3b1d6e','#9ae7ff']];
+const tr=$('#track');W.forEach((w,i)=>{const d=document.createElement('div');d.className='w';d.style.cssText=`--a:${w[1]};--b:${w[2]};--i:${i*1.1}`;d.innerHTML=w[0]+'<small>World '+(i+1)+'</small>'+(w[3]?'<div class="sun"><i></i></div>':'');tr.append(d)});
+const C=['#6b3418','#ffd23f','#e63b2e','#5bc25a'],tow=$('#tow'),N=12;let shown=0;
+const caps=[...document.querySelectorAll('.cap')],tall=[...document.querySelectorAll('.tall')];let ly=scrollY,vel=0,ci=0;
+function tick(){const vh=innerHeight;
+tall.forEach(t=>{const r=t.getBoundingClientRect();t._p=Math.min(1,Math.max(0,-r.top/(r.height-vh)));t.style.setProperty('--p',rm?1:t._p.toFixed(4))});
+if(!rm){vel+=((scrollY-ly)-vel)*.15;ly=scrollY;document.documentElement.style.setProperty('--v',Math.max(-10,Math.min(10,vel*.22)).toFixed(2));
+tr.style.transform=`translateX(${-$('#worlds')._p*(tr.scrollWidth-innerWidth)}px)`}
+const p=rm?1:$('#stack')._p,n=1+Math.floor(p*(N-1));$('#n').textContent=Math.round(p*500);
+while(shown<n){const b=document.createElement('b');b.style.cssText=`--c:${C[shown%4]};--w:${shown==0?'44vh':(30+(shown%3)*3)+'vh'}`;if(shown==0)b.style.setProperty('--w','min(44vw,300px)');else b.style.setProperty('--w',`min(${38+(shown%3)*3}vw,${250+(shown%3)*20}px)`);tow.append(b);shown++}
+while(shown>n){tow.lastChild.remove();shown--}
+const k=p<.34?0:p<.67?1:2;if(k!=ci){caps[ci].classList.remove('on');caps[k].classList.add('on');ci=k}
+requestAnimationFrame(tick)}
+tick();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.25});document.querySelectorAll('.f').forEach(f=>io.observe(f));
+</script></body></html>
